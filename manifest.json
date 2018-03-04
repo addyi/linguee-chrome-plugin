@@ -1,0 +1,16 @@
+{
+  "name": "Linguee Chrome Context Menu",
+
+  "version": "1.0",
+  "manifest_version": 2,
+
+  "description": "A chrome plugin witch provides a context menu for easy linguee searches",
+
+  "permissions": [
+    "contextMenus"
+   ],
+
+  "background": { 
+    "scripts": ["contextAction.js"]
+  }
+}
