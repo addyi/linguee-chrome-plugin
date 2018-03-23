@@ -6,6 +6,12 @@ This is a chrome plugin which provides a context menu for easy [Linguee][ling] s
 
 ## Installation
 
+**Chrome Web Store**:
+
+[![available in the chrome web store](promoImages/WebStoreBadge.png)][webstore]
+
+**From Source Code**:
+
 1. Clone/Download this Repository
 2. Visit `chrome://extensions` in your browser or select **Extensions** under the **More Tools** menu.
 3. Ensure that the Developer mode checkbox in the top right-hand corner is checked.
@@ -20,3 +26,4 @@ Without this [StackOverflow][answer] answer by Bartłomiej Szałach, I would hav
 
 [answer]: https://stackoverflow.com/questions/13783500/context-menus-in-chrome-extensions#13783536
 [ling]: https://www.linguee.com/
+[webstore]: https://chrome.google.com/webstore/detail/agcillhniodhhnjmmigkgpbeodnclmmp
