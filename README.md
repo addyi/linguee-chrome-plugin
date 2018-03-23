@@ -1,8 +1,8 @@
-# Unofficial Linguee Chrome plugin
+# Linguee Chrome plugin
 
-An unofficial chrome plugin witch provides a context menu for easy [Linguee](https://www.linguee.com/) searches.
+This is a chrome plugin which provides a context menu for easy [Linguee][ling] searches. This plugin is unofficial and has no connection to the firm behind Linguee.
 
-![Select Word, Right click, Search with Linguee](img/pluginInAction.png)
+![Select Word, Right click, Search with Linguee](promoImages/pluginInAction.png)
 
 ## Installation
 
@@ -19,3 +19,4 @@ An unofficial chrome plugin witch provides a context menu for easy [Linguee](htt
 Without this [StackOverflow][answer] answer by Bartłomiej Szałach, I would have never been able to write this plugin. Mostly, because I distaste "Web Development".
 
 [answer]: https://stackoverflow.com/questions/13783500/context-menus-in-chrome-extensions#13783536
+[ling]: https://www.linguee.com/
