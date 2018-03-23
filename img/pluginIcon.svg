@@ -9,16 +9,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="128"
+   height="128"
+   viewBox="0 0 33.866666 33.866668"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="pluginIcon.svg"
-   inkscape:export-filename="C:\Users\Adrian Renner\addyi\DevProjects\web\linguee-chrome-plugin\pluginIcon512.png"
-   inkscape:export-xdpi="43.349998"
-   inkscape:export-ydpi="43.349998">
+   inkscape:export-filename="C:\Users\Adrian Renner\addyi\DevProjects\web\linguee-chrome-plugin\pluginIconStore.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -28,19 +28,20 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.66161843"
-     inkscape:cx="137.93758"
-     inkscape:cy="552.45056"
+     inkscape:zoom="7.485358"
+     inkscape:cx="87.179574"
+     inkscape:cy="61.22527"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:snap-text-baseline="false"
      inkscape:snap-object-midpoints="true"
-     inkscape:window-width="1920"
-     inkscape:window-height="1013"
-     inkscape:window-x="-9"
+     inkscape:window-width="2400"
+     inkscape:window-height="1284"
+     inkscape:window-x="2391"
      inkscape:window-y="29"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="px" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -56,23 +57,24 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(0,-263.13332)">
     <circle
-       style="opacity:0.8;fill:#265180;fill-opacity:1;stroke:#265180;stroke-width:10.28833866;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:9.99938107;stroke-opacity:1;paint-order:stroke markers fill"
+       style="opacity:0.8;fill:#265180;fill-opacity:1;stroke:#265180;stroke-width:1.01625919;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:9.99938107;stroke-opacity:1;paint-order:stroke markers fill"
        id="path815"
-       cx="150.10001"
-       cy="147"
-       r="144.85583" />
+       cx="16.933332"
+       cy="280.06665"
+       r="14.308537" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="76.828156"
-       y="232.13245"
+       style="font-style:normal;font-weight:normal;font-size:1.045398px;line-height:1.25;font-family:sans-serif;text-align:start;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.02613495"
+       x="9.6957045"
+       y="288.47586"
        id="text819"><tspan
          sodipodi:role="line"
          id="tspan817"
-         x="76.828156"
-         y="232.13245"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:282.222229px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';fill:#ffffff;stroke-width:0.26458332">L</tspan></text>
+         x="9.6957045"
+         y="288.47586"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:27.877285px;font-family:'Berlin Sans FB';-inkscape-font-specification:'Berlin Sans FB';fill:#ffffff;stroke-width:0.02613495">L</tspan></text>
   </g>
 </svg>
