@@ -9,7 +9,8 @@
     "description": "A chrome plugin witch provides a context menu for easy linguee searches",
 
     "permissions": [
-        "contextMenus"
+        "contextMenus",
+        "storage"
     ],
 
     "offline_enabled": false,
