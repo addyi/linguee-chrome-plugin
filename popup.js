@@ -4,12 +4,13 @@ function openTabWithGitRepoPage() {
     });
 };
 
+const langSelect = document.getElementById('target');
+
 window.addEventListener('load', function load(event){
-    var openRepoButton = document.getElementById('openGitRepo');
+    const openRepoButton = document.getElementById('openGitRepo');
     openRepoButton.addEventListener('click', function() { openTabWithGitRepoPage(); });
 
-    var targetSelect = document.getElementById("target");
-    targetSelect.addEventListener("change", (e) => {
+    langSelect.addEventListener("change", (e) => {
         const target = e.currentTarget;
         const value = target.options[target.selectedIndex].value;
 
@@ -18,4 +19,8 @@ window.addEventListener('load', function load(event){
         })
     })
 });
+
+chrome.storage.sync.get(["targetLang"], (items) => {
+    langSelect.value = items.targetLang;
+})
 
