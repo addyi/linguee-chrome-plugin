@@ -32,6 +32,6 @@
     },
 
     "background": {
-        "scripts": ["contextAction.js"]
+        "scripts": ["setup.js","contextAction.js"]
     }
 }

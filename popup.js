@@ -4,7 +4,15 @@ function openTabWithGitRepoPage() {
     });
 };
 
-const langSelect = document.getElementById('target');
+var langSelect;
+
+window.onload = function(){
+    langSelect = document.getElementById('target');
+
+    chrome.storage.sync.get(["targetLang"], (items) => {
+        langSelect.value = items.targetLang;
+    });
+}
 
 window.addEventListener('load', function load(event){
     const openRepoButton = document.getElementById('openGitRepo');
@@ -19,8 +27,3 @@ window.addEventListener('load', function load(event){
         })
     })
 });
-
-chrome.storage.sync.get(["targetLang"], (items) => {
-    langSelect.value = items.targetLang;
-})
-
