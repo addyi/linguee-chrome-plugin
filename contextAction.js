@@ -22,6 +22,7 @@ const domainMap =
     "Russian" : "www.linguee.ru",
     "Japanese" : "www.linguee.jp",
     "Portuguese" : "www.linguee.pt",
+    "Brazilian Portuguese" : "www.linguee.com.br",
     "Italian" : "www.linguee.it",
     "Dutch" : "www.linguee.nl",
     "Polish" : "www.linguee.pl",
