@@ -1,8 +1,6 @@
 function getword(info,tab) {
     chrome.storage.sync.get(["targetLang"], (items) => {
-        chrome.tabs.create({  
-            url: "https://" + domainMap[items.targetLang] + "/search?source=auto&query=" + info.selectionText,
-        });
+      window.open("https://" + domainMap[items.targetLang] + "/search?source=auto&query=" + info.selectionText, '_blank');
     })
 }
 
