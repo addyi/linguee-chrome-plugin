@@ -7,6 +7,7 @@ function openTabWithGitRepoPage() {
 var targetLangSelect;
 var sourceLangSelect;
 
+
 window.onload = function () {
     targetLangSelect = document.getElementById('target');
     sourceLangSelect = document.getElementById('source');
@@ -41,6 +42,3 @@ window.addEventListener('load', function load(event) {
         })
     })
 });
-
-
-
