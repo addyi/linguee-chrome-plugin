@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Linguee Context Menu</title>
+    <title>Linguee Context Menu</title>
     <script type="text/javascript" src='./popup.js'></script>
     <link rel="stylesheet" type="text/css" href='./style.css'>
 </head>
+
 <body>
     <img src="promoImages/pluginInAction.png" width="500px" alt="">
     <div id='settings'>
-        <p class="setting-description">Choose your target language :</p>
-        <select id="target" class="setting-input">
-            <option value="English" default>English</option>
-            <option value="German">German</option>
-            <option value="French">French</option>
-            <option value="Spanish">Spanish</option>
-            <option value="Chinese">Chinese</option>
-            <option value="Russian">Russian</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Portuguese">Portuguese</option>
-            <option value="Italian">Italian</option>
-            <option value="Dutch">Dutch</option>
-            <option value="Polish">Polish</option>
-            <option value="Swedish">Swedish</option>
-            <option value="Danish">Danish</option>
-            <option value="Finnish">Finnish</option>
-            <option value="Greek">Greek</option>
-            <option value="Czech">Czech</option>
-            <option value="Romanian">Romanian</option>
-            <option value="Hungarian">Hungarian</option>
-            <option value="Slovak">Slovak</option>
-            <option value="Bulgarian">Bulgarian</option>
-            <option value="Slovene">Slovene</option>
-            <option value="Lithuanian">Lithuanian</option>
-            <option value="Latvian">Latvian</option>
-            <option value="Estonian">Estonian</option>
-            <option value="Maltese">Matlese</option>
-        </select>
+        <ul>
+            <li>
+                <p class="setting-description">Choose your target language :</p>
+                <select id="target" class="setting-input">
+                    <option value="English" default>English</option>
+                    <option value="German">German</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="Polish">Polish</option>
+                    <option value="Swedish">Swedish</option>
+                    <option value="Danish">Danish</option>
+                    <option value="Finnish">Finnish</option>
+                    <option value="Greek">Greek</option>
+                    <option value="Czech">Czech</option>
+                    <option value="Romanian">Romanian</option>
+                    <option value="Hungarian">Hungarian</option>
+                    <option value="Slovak">Slovak</option>
+                    <option value="Bulgarian">Bulgarian</option>
+                    <option value="Slovene">Slovene</option>
+                    <option value="Lithuanian">Lithuanian</option>
+                    <option value="Latvian">Latvian</option>
+                    <option value="Estonian">Estonian</option>
+                    <option value="Maltese">Matlese</option>
+                </select>
+            </li>
+            <li>
+                <p class="setting-description">Force source language</p>
+                <select id="source" class="setting-input">
+                    <option value="Auto" default>Auto detect</option>
+                    <option value="English">English</option>
+                    <option value="German">German</option>
+                    <option value="French">French</option>
+                    <option value="Spanish">Spanish</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Russian">Russian</option>
+                    <option value="Japanese">Japanese</option>
+                    <option value="Portuguese">Portuguese</option>
+                    <option value="Italian">Italian</option>
+                    <option value="Dutch">Dutch</option>
+                    <option value="Polish">Polish</option>
+                    <option value="Swedish">Swedish</option>
+                    <option value="Danish">Danish</option>
+                    <option value="Finnish">Finnish</option>
+                    <option value="Greek">Greek</option>
+                    <option value="Czech">Czech</option>
+                    <option value="Romanian">Romanian</option>
+                    <option value="Hungarian">Hungarian</option>
+                    <option value="Slovak">Slovak</option>
+                    <option value="Bulgarian">Bulgarian</option>
+                    <option value="Slovene">Slovene</option>
+                    <option value="Lithuanian">Lithuanian</option>
+                    <option value="Latvian">Latvian</option>
+                    <option value="Estonian">Estonian</option>
+                    <option value="Maltese">Matlese</option>
+                </select>
+            </li>
+        </ul>
     </div>
 
     <div class="more">
@@ -44,4 +81,5 @@
         </button>
     </div>
 </body>
+
 </html>
