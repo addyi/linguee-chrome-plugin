@@ -1,37 +1,7 @@
 var autoUrl = "https://{0}/search?source=auto&query={1}"
 var forceUrl = "{0}/search?source=auto&query={1}"
 
-
-function getword(info, tab) {
-    chrome.storage.sync.get(["targetLang"], (targetItems) => {
-        chrome.storage.sync.get(["sourceLang"], (items) => {
-            const mapKey = domainMap[targetItems.targetLang].short + "-" + domainMap[items.sourceLang].short;
-
-            if (items.sourceLang === "Auto" || !(mapKey in langMaps)) {
-                chrome.tabs.create({
-                    url: autoUrl.format(domainMap[targetItems.targetLang].url, info.selectionText)
-                });
-            }
-            else {
-                if (mapKey in langMaps) {
-                    chrome.tabs.create({
-                        url: forceUrl.format(
-                            langMaps[mapKey],
-                            info.selectionText
-                        )
-                    });
-                }
-            }
-        });
-    })
-}
-
-chrome.contextMenus.create({
-    title: "Linguee: \"%s\"",
-    contexts: ["selection"],
-    onclick: getword,
-});
-
+// Define string format if non existant
 if (!String.prototype.format) {
     String.prototype.format = function () {
         var args = arguments;
@@ -43,6 +13,32 @@ if (!String.prototype.format) {
         });
     };
 }
+
+
+function getword(info, tab) {
+    chrome.storage.sync.get(["targetLang"], (targetItems) => {
+        chrome.storage.sync.get(["sourceLang"], (items) => {
+
+            var url = autoUrl.format(domainMap[targetItems.targetLang].url, info.selectionText);
+
+            if (items.sourceLang !== "Auto") {
+                const mapKey = domainMap[targetItems.targetLang].short + "-" + domainMap[items.sourceLang].short;
+
+                if (mapKey in langMaps) {
+                    url = forceUrl.format(langMaps[mapKey], info.selectionText);
+                }
+            }
+
+            chrome.tabs.create({ url: url });
+        });
+    })
+}
+
+chrome.contextMenus.create({
+    title: "Linguee: \"%s\"",
+    contexts: ["selection"],
+    onclick: getword,
+});
 
 const domainMap = {
     "English": { url: "www.linguee.com", short: "EN" },
