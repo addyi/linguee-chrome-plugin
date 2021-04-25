@@ -21,6 +21,7 @@
     border: none;
     border-bottom: solid grey 1px;
     padding: 0 16px;
+    margin : 14px;
 }
 
 .more {
@@ -45,3 +46,14 @@
     text-transform: uppercase;
 }
 
+li {
+    display: flex;
+    flex-direction: row;
+}
+li > * {
+    width: 50%;
+}
+
+ul {
+    width: 100%;
+}

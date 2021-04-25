@@ -4,26 +4,41 @@ function openTabWithGitRepoPage() {
     });
 };
 
-var langSelect;
+var targetLangSelect;
+var sourceLangSelect;
 
-window.onload = function(){
-    langSelect = document.getElementById('target');
+
+window.onload = function () {
+    targetLangSelect = document.getElementById('target');
+    sourceLangSelect = document.getElementById('source');
 
     chrome.storage.sync.get(["targetLang"], (items) => {
-        langSelect.value = items.targetLang;
-    });
+        targetLangSelect.value = items.targetLang;
+    })
+
+    chrome.storage.sync.get(["sourceLang"], (items) => {
+        sourceLangSelect.value = items.sourceLang || "Auto";
+    })
 }
 
-window.addEventListener('load', function load(event){
+window.addEventListener('load', function load(event) {
     const openRepoButton = document.getElementById('openGitRepo');
-    openRepoButton.addEventListener('click', function() { openTabWithGitRepoPage(); });
+    openRepoButton.addEventListener('click', function () { openTabWithGitRepoPage(); });
 
-    langSelect.addEventListener("change", (e) => {
+    targetLangSelect.addEventListener("change", (e) => {
         const target = e.currentTarget;
         const value = target.options[target.selectedIndex].value;
 
-        chrome.storage.sync.set({"targetLang" : value}, () => {
-            chrome.extension.getBackgroundPage().console.log("TargetLang : " + value + " was well saved" );
+        chrome.storage.sync.set({ "targetLang": value }, () => {
+            chrome.extension.getBackgroundPage().console.log("TargetLang : " + value + " was well saved");
+        })
+    })
+    sourceLangSelect.addEventListener("change", (e) => {
+        const target = e.currentTarget;
+        const value = target.options[target.selectedIndex].value;
+
+        chrome.storage.sync.set({ "sourceLang": value }, () => {
+            chrome.extension.getBackgroundPage().console.log("SourceLang : " + value + " was well saved");
         })
     })
 });
