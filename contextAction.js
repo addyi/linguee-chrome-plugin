@@ -44,8 +44,7 @@ if (!String.prototype.format) {
     };
 }
 
-const domainMap =
-{
+const domainMap = {
     "English": { url: "www.linguee.com", short: "EN" },
     "German": { url: "www.linguee.de", short: "DE" },
     "French": { url: "www.linguee.fr", short: "FR" },

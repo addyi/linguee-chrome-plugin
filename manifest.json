@@ -3,10 +3,10 @@
     "author": "addyi",
     "homepage_url": "https://github.com/addyi/linguee-chrome-plugin",
 
-    "version": "1.4",
+    "version": "1.5.1",
     "manifest_version": 2,
 
-    "description": "A chrome plugin witch provides a context menu for easy linguee searches",
+    "description": "A chrome plugin which provides a context menu for easy linguee searches",
 
     "permissions": [
         "contextMenus",
